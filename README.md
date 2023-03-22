@@ -29,10 +29,10 @@ Download:
 
 ### Training  
 1. Download pre-trained [ResNet-101 weights](https://download.pytorch.org/models/resnet101-63fe2227.pth) and put into your own backbone folder.
-2. Run `exps/train_Abd.sh` or `exps/train_CMR.sh`
+2. Run `./exps/train_Abd.sh` or `./exps/train_CMR.sh`
 
 ### Testing
-Run `exp/validation.sh`
+Run `./exp/validation.sh`
 
 ### Acknowledgement
 This code is based on [Q-Net](https://github.com/zjlab-ammi/q-net), [PFENet](https://github.com/dvlab-research/PFENet) and [Mask2Former](https://github.com/facebookresearch/Mask2Former). 
