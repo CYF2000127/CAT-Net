@@ -35,4 +35,4 @@ Download:
 Run `./exp/validation.sh`
 
 ### Acknowledgement
-This code is based on [Q-Net](https://github.com/zjlab-ammi/q-net), [PFENet](https://github.com/dvlab-research/PFENet) and [Mask2Former](https://github.com/facebookresearch/Mask2Former). 
+This code is based on [Q-Net](https://github.com/zjlab-ammi/q-net), [PFENet](https://github.com/dvlab-research/PFENet)
