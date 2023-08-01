@@ -4,7 +4,6 @@ import torch.nn as nn
 import torch.nn.functional as F
 from torch.nn.parameter import Parameter
 from .encoder import Res101Encoder
-#from .backbone.torchvision_backbones import TVDeeplabRes101Encoder
 
 
 class FewShotSeg(nn.Module):
