@@ -36,9 +36,10 @@ Download:
 | - No compositional augmentation | 67.1         | 60.7              | 63.8          | 78.2                 | 70.2              | 74.0          |
 | - Random reaction order  | 72.0                 | 64.2              | 67.9          | 83.9                 | 74.3              | 78.8          |
 | - No postprocessing      | 70.8                 | 66.0              | 68.3          | 82.1                 | 76.4              | 79.1          |
-| Our Baseline             | 59.24                | 60.32             | 59.78         | 74.30                | 74.96             | 74.63         |
-| New                      | 60.02                | 61.56             | 60.29        | 74.68                | 75.35             | 75.01         |
-
+|Baseline                  | 59.24                | 60.32             | 59.78         | 74.30                | 74.96             | 74.63         |
+|First Modify              | 60.02                | 61.56             | 60.29        | 74.68                | 75.35             | 75.01         |
+| RxnScribe                | 72.3                 | 66.2              | 69.1          | 83.8                 | 76.5              | 80.0          |
+| ChemRxnGPT                | 71.21                | 65.91             | 68.46       | 83.77                | 79.34           | 81.50         |
 
 ### Training  
 1. Download pre-trained [ResNet-101 weights](https://download.pytorch.org/models/resnet101-63fe2227.pth) and put into your own backbone folder.
