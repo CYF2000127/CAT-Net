@@ -32,14 +32,11 @@ Download:
 | ReactionDataExtractor    | 4.1                  | 1.3               | 1.9           | 19.4                 | 5.9               | 9.0           |
 | OChemR                   | 4.4                  | 2.8               | 3.4           | 12.4                 | 7.9               | 9.6           |
 | RxnScribe                | 72.3                 | 66.2              | 69.1          | 83.8                 | 76.5              | 80.0          |
-| - No pretraining         | 66.4                 | 59.4              | 62.7          | 80.4                 | 71.3              | 75.5          |
-| - No compositional augmentation | 67.1         | 60.7              | 63.8          | 78.2                 | 70.2              | 74.0          |
-| - Random reaction order  | 72.0                 | 64.2              | 67.9          | 83.9                 | 74.3              | 78.8          |
-| - No postprocessing      | 70.8                 | 66.0              | 68.3          | 82.1                 | 76.4              | 79.1          |
-|Baseline                  | 59.24                | 60.32             | 59.78         | 74.30                | 74.96             | 74.63         |
-|First Modify              | 60.02                | 61.56             | 60.29        | 74.68                | 75.35             | 75.01         |
-| RxnScribe                | 72.3                 | 66.2              | 69.1          | 83.8                 | 76.5              | 80.0          |
-| ChemRxnGPT                | 71.21                | 65.91             | 68.46       | 83.97                | 79.34           | 81.60         |
+|Baseline                | 60.02                | 61.56             | 60.29        | 73.68                | 74.35             | 74.01         |
+| ChemRxnGPT (llama-7b)(336X336)      | 70.21                | 64.91             | 67.46       | 82.97                | 78.34           | 80.60         |
+| ChemRxnGPT (llama2-13b)(448X448)    | 71.84                | 66.88             | 69.27       | 83.91                | 80.12          | 81.97         |
+| ChemRxnGPT (llama2-13b)(1024X1024)  | 73.52               | 69.08             | 71.23       | 85.95                | 82.54           | 84.21         |
+
 
 ### Training  
 1. Download pre-trained [ResNet-101 weights](https://download.pytorch.org/models/resnet101-63fe2227.pth) and put into your own backbone folder.
