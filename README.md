@@ -41,6 +41,25 @@ Download:
 | ChemRxnGPT(New)(llama2-7b)(1024X1024)  | 73.98               | 69.58             | 71.71       | 86.63                | 82.39           | 84.46         |
 | ChemRxnGPT(New)(llama2-7b)(1333X1333)  | 74.67               | 69.67             | 72.08       | 86.91                | 82.77          | 84.79         |
 
+| Number of Image tokens   |Soft Match Precision | Soft Match Recall | Soft Match F1 |
+|--------------------------|----------------------|-------------------|---------------|
+| 100                   | 4.1                  | 1.3               | 1.9           |
+| 200                   | 4.4                  | 2.8               | 3.4           |
+| 300                   | 86.91                | 82.77              | 84.79          |
+| 400                   | 72.3                 | 66.2              | 69.1          |
+
+|  w/BERT   |Freeze   |Soft Match Precision | Soft Match Recall | Soft Match F1 |
+|--------------------------|----------------------|-------------------|---------------|---------------|
+| \cmark    |          | 4.1                  | 1.3               | 1.9           |
+|                   |           | 4.4                  | 2.8               | 3.4           |
+|      |          | 72.3                 | 66.2              | 69.1          |
+
+|  position representation    |Soft Match Precision | Soft Match Recall | Soft Match F1 |
+|--------------------------|----------------------|-------------------|---------------|
+| Vocab                       |                   |               |           |
+| Numerical                  |                   |                |            |
+
+
 
 ### Training  
 1. Download pre-trained [ResNet-101 weights](https://download.pytorch.org/models/resnet101-63fe2227.pth) and put into your own backbone folder.
