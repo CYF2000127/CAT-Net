@@ -27,19 +27,22 @@ Download:
 **Pre-processing** is according to [Ouyang et al.](https://github.com/cheng-01037/Self-supervised-Fewshot-Medical-Image-Segmentation.git) and we follow their pre-processing pipeline. Please refer to [Ouyang et al.](https://github.com/cheng-01037/Self-supervised-Fewshot-Medical-Image-Segmentation.git) for details.
 
 
-| Model/Modification       | Hard Match Precision | Hard Match Recall | Hard Match F1 | Soft Match Precision | Soft Match Recall | Soft Match F1 |
+| Model/real      | Hard Match Precision | Hard Match Recall | Hard Match F1 | Soft Match Precision | Soft Match Recall | Soft Match F1 |
 |--------------------------|----------------------|-------------------|---------------|----------------------|-------------------|---------------|
-| ReactionDataExtractor    | 4.1                  | 1.3               | 1.9           | 19.4                 | 5.9               | 9.0           |
-| OChemR                   | 4.4                  | 2.8               | 3.4           | 12.4                 | 7.9               | 9.6           |
-| RxnScribe(1333x1333)     | 72.3                 | 66.2              | 69.1          | 83.8                 | 76.5              | 80.0          |
-|Baseline                | 60.02                | 61.56             | 60.29        | 73.68                | 74.35             | 74.01         |
-| ChemRxnGPT (llama-7b)(336X336)      | 70.11                | 64.81             | 67.36      | 82.67                | 78.04           | 80.30         |
-| ChemRxnGPT (llama-7b)(448X448)      | 71.33                | 66.21             | 68.67      | 83.24                | 79.42           | 81.29        |
-| ChemRxnGPT (llama2-13b)(448X448)    | 71.84                | 66.88             | 69.27       | 83.91                | 80.12          | 81.97         |
-| ChemRxnGPT (llama2-13b)(1024X1024)  | 73.52               | 69.08             | 71.23       | 85.95                | 82.54           | 84.21         |
-| ChemRxnGPT(New)(llama2-13b)(1024X1024)  | 74.23               | 69.63             | 71.86       | 86.65                | 82.42           | 84.48         |
-| ChemRxnGPT(New)(llama2-7b)(1024X1024)  | 73.98               | 69.58             | 71.71       | 86.63                | 82.39           | 84.46         |
-| ChemRxnGPT(New)(llama2-7b)(1333X1333)  | 74.67               | 69.67             | 72.08       | 86.91                | 82.77          | 84.79         |
+| ReactionDataExtractor    | 4.10                  | 1.30               | 1.90           | 19.40                 | 5.90               | 9.00           |
+| OChemR                   | 4.40                  | 2.80               | 3.40           | 12.40                 | 7.90               | 9.60           |
+| RxnScribe     | 72.32                 | 66.23              | 69.12          | 83.83                 | 76.51              | 80.04          |
+| ReactionImgMLLM     | 74.67               | 69.67             | 72.08       | 86.91                | 82.77          | 84.79         |
+
+
+| Model/systic      | Hard Match Precision | Hard Match Recall | Hard Match F1 | Soft Match Precision | Soft Match Recall | Soft Match F1 |
+|--------------------------|----------------------|-------------------|---------------|----------------------|-------------------|---------------|
+| ReactionDataExtractor    | 8.40                  | 6.90              | 7.60           | 22.60                 | 11.40               | 15.20           |
+| OChemR                   | 8.10                  | 7.50              | 7.80           | 15.90                 | 12.80              | 14.20           |
+| RxnScribe    | 78.54                | 75.63              |     77.06      | 87.62                | 83.95              |      85.75    |
+| ReactionImgMLLM   | 86.41             | 85.92            |   86.16     | 91.55              | 90.81          |     91.18     |
+
+
 
 | Model        | OCR Accuracy | Role Identification Accuracy  |
 |--------------------------|----------------------|-------------------|
@@ -56,13 +59,19 @@ Download:
 |  w/BERT   |Freeze   |Soft Match Precision | Soft Match Recall | Soft Match F1 |OCR Accuracy | Role Identification Accuracy  |
 |--------------------------|----------------------|-------------------|---------------|---------------|----------------------|-------------------|
 | ✗    |       ✗          | 82.21                  | 78.55              | 80.34           |94.74| 93.41|
-|   ✓   |    ✗            | 86.91                  | 82.77              | 84.79          |94.91|93.62|
+|   ✓   |                | 86.91                  | 82.77              | 84.79          |94.91|93.62|
 |    ✓   |      ✓         | 71.65                  | 70.02              | 69.1          |94.21|  81.73|
 
 |  position representation    |Soft Match Precision | Soft Match Recall | Soft Match F1 |
 |--------------------------|----------------------|-------------------|---------------|
 | Vocab                       |         86.15          |          81.23     |      83.62     |
 | Numerical                  |       86.91            |        82.77        |      84.79      |
+
+| separate training   |Soft Match Precision | Soft Match Recall | Soft Match F1 | OCR Accuracy | Role Identification Accuracy  |
+|--------------------------|----------------------|-------------------|---------------|----------------------|-------------------|
+| ✓                  | 86.84                 | 82.64               |    84.68       |94.78|93.39|
+| ✗                  | 86.91                | 82.77              | 84.79          |94.91            |93.62                |
+
 
 
 
