@@ -43,10 +43,18 @@ Download:
 | ReactionImgMLLM   | 86.41             | 85.92            |   86.16     | 91.55              | 90.81          |     91.18     |
 
 
-
 | Model        | OCR Accuracy | Role Identification Accuracy  |
 |--------------------------|----------------------|-------------------|
 | ReactionImgMLLM  | 94.91               | 93.62            |
+
+
+
+
+
+| separate training   |Soft Match Precision | Soft Match Recall | Soft Match F1 | OCR Accuracy | Role Identification Accuracy  |
+|--------------------------|----------------------|-------------------|---------------|----------------------|-------------------|
+| ✓                  | 86.84                 | 82.64               |    84.68       |94.78|93.39|
+| ✗                  | 86.91                | 82.77              | 84.79          |94.91            |93.62                |
 
 
 | Number of Image tokens   |Soft Match Precision | Soft Match Recall | Soft Match F1 | OCR Accuracy | Role Identification Accuracy  |
@@ -67,10 +75,6 @@ Download:
 | Vocab                       |         86.15          |          81.23     |      83.62     |
 | Numerical                  |       86.91            |        82.77        |      84.79      |
 
-| separate training   |Soft Match Precision | Soft Match Recall | Soft Match F1 | OCR Accuracy | Role Identification Accuracy  |
-|--------------------------|----------------------|-------------------|---------------|----------------------|-------------------|
-| ✓                  | 86.84                 | 82.64               |    84.68       |94.78|93.39|
-| ✗                  | 86.91                | 82.77              | 84.79          |94.91            |93.62                |
 
 
 
