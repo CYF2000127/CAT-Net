@@ -59,7 +59,7 @@ Download:
 |  w/BERT   |Freeze   |Soft Match Precision | Soft Match Recall | Soft Match F1 |OCR Accuracy | Role Identification Accuracy  |
 |--------------------------|----------------------|-------------------|---------------|---------------|----------------------|-------------------|
 | ✗    |       ✗          | 82.21                  | 78.55              | 80.34           |94.74| 93.41|
-|   ✓   |                | 86.91                  | 82.77              | 84.79          |94.91|93.62|
+|   ✓   |       ✗         | 86.91                  | 82.77              | 84.79          |94.91|93.62|
 |    ✓   |      ✓         | 71.65                  | 70.02              | 69.1          |94.21|  81.73|
 
 |  position representation    |Soft Match Precision | Soft Match Recall | Soft Match F1 |
